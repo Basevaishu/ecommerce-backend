@@ -10,7 +10,7 @@ import smtplib
 from email.mime.text import MIMEText
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["http://bakshivijayalakshmi.chetantechnologies.com"])
 
 otp_store = {}
 
