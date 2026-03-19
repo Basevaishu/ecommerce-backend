@@ -25,7 +25,9 @@ def get_db():
         database="railway",
         port=46856
     )
-
+@app.route("/")
+def home():
+    return "Backend is live! Visit /api/products to see data."
 # =========================================
 # ADMIN AUTH CHECK
 # =========================================
