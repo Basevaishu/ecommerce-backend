@@ -19,10 +19,11 @@ otp_store = {}
 # =========================================
 def get_db():
     return mysql.connector.connect(
-        host="localhost",
+        host="mysql.railway.internal",
         user="root",
-        password="Vaishu@2003",
-        database="ecommerce_db"
+        password="ZPUFawUVzSbHfvwfiTNtdxZkvPyHlRqj",
+        database="railway",
+        port=3306
     )
 
 # =========================================
